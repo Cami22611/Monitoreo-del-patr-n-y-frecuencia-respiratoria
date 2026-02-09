@@ -5,7 +5,7 @@ El proceso respiratorio puede describirse mediante diversas variables físicas m
 
 Si bien existen múltiples variables asociadas al proceso respiratorio, no todas son fácilmente accesibles para su medición en un entorno de laboratorio sin instrumentación clínica especializada. En esta práctica se seleccionó la expansión mecánica de la caja torácica como variable indirecta de interés, debido a que refleja de manera periódica las fases de inspiración y espiración y puede ser capturada de forma no invasiva. Esta variable permite obtener el patrón respiratorio y estimar la frecuencia respiratoria, cumpliendo con los objetivos propuestos en la guía de laboratorio.
 
-# Sensor FSR-40
+## Sensor FSR-40
 El proceso respiratorio se manifiesta externamente a través de variaciones mecánicas asociadas a la expansión y contracción de la caja torácica durante las fases de inspiración y espiración. Estas variaciones presentan una frecuencia baja y un comportamiento periódico, lo que permite su detección mediante sensores externos no invasivos que respondan a cambios mecánicos inducidos por la respiración.
 
 Para el desarrollo de esta práctica se seleccionó un sensor de fuerza resistivo (FSR-40), el cual modifica su resistencia eléctrica en función de la presión aplicada sobre su superficie. Este tipo de sensor resulta adecuado para la detección indirecta del patrón respiratorio, ya que permite convertir las variaciones mecánicas producidas por la expansión torácica en una señal eléctrica proporcional, susceptible de ser acondicionada y digitalizada.
