@@ -45,6 +45,37 @@ Una vez establecido el diseño del sistema para la adquisición y digitalizació
 
 # Digitalización, Adquisición y visualización de la señal
 
+la señal se digitalizo mediante el ADC integrado que posee la esp32, este se definio bajo los parametros expuestos a continuación 
+
+```bash
+const int fsrPin = 34; # pin del ADC
+
+void setup() {
+  Serial.begin(115200); # inicio de comunicación serial 
+  delay(1000);
+
+  analogReadResolution(12);        # resolución del ADC
+  analogSetAttenuation(ADC_11db);  
+}
+
+void loop() {
+  long suma = 0;
+
+  for (int i = 0; i < 10; i++) {
+    suma += analogRead(fsrPin);
+    delayMicroseconds(200);
+  }
+
+  int fsrValue = suma / 10;
+  Serial.println(fsrValue);
+
+  delay(10);  
+}
+
+```
+El código lee de forma continua la señal del sensor, promedia varias muestras consecutivas (10 muestras) para reducir el ruido y envía el valor resultante por comunicación serial. La configuración del ADC permite medir correctamente el rango de voltaje del sensor, y el proceso se repite cada 10 ms, estableciendo una frecuencia de muestreo aproximada de 100 Hz, adecuada para el análisis temporal de la señal respiratoria.
+
+
 
 
 
