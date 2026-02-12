@@ -42,6 +42,9 @@ El sensor FSR-40, se conectó a la entrada analógica de una ESP32 mediante una 
 
 Una vez establecido el diseño del sistema para la adquisición y digitalización de la señal respiratoria, se llevó a cabo su implementación física con el propósito de realizar la recolección de información. A continuación, se presenta el montaje desarrollado del sistema:
 
+<img width="423" height="358" alt="image" src="https://github.com/user-attachments/assets/356df3e4-407a-4b83-9ad9-204a1cfff8b3" />
+
+
 
 
 
