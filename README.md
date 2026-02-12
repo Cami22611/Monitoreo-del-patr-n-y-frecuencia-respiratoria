@@ -36,6 +36,9 @@ En conjunto, el sensor FSR-40 permitió la adquisición del patrón respiratorio
 
 El sensor FSR-40, se conectó a la entrada analógica de una ESP32 mediante una configuración de divisor de voltaje alimentada a 3.3 V. En este montaje, el sensor se dispone en serie con una resistencia fija conectada a tierra, generando en el nodo intermedio una señal de voltaje proporcional a las variaciones de resistencia inducidas por el estímulo físico aplicado (fuerza o presión). Dicho voltaje es adquirido directamente por el ADC de la ESP32, permitiendo la conversión de la magnitud física en una señal digital sin necesidad de etapas adicionales de acondicionamiento.
 
+<img width="925" height="720" alt="image" src="https://github.com/user-attachments/assets/6cd49768-8f29-4b34-8762-d785aa05386b" />
+
+
 
 Una vez establecido el diseño del sistema para la adquisición y digitalización de la señal respiratoria, se llevó a cabo su implementación física con el propósito de realizar la recolección de información. A continuación, se presenta el montaje desarrollado del sistema:
 
