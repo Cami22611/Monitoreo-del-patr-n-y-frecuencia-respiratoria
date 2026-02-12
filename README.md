@@ -21,6 +21,7 @@ El proceso respiratorio puede describirse mediante diversas variables físicas m
 Si bien existen múltiples variables asociadas al proceso respiratorio, no todas son fácilmente accesibles para su medición en un entorno de laboratorio sin instrumentación clínica especializada. En esta práctica se seleccionó la expansión mecánica de la caja torácica como variable indirecta de interés, debido a que refleja de manera periódica las fases de inspiración y espiración y puede ser capturada de forma no invasiva. Esta variable permite obtener el patrón respiratorio y estimar la frecuencia respiratoria, cumpliendo con los objetivos propuestos en la guía de laboratorio.
 
 ## Sensor FSR-40
+
 El proceso respiratorio se manifiesta externamente a través de variaciones mecánicas asociadas a la expansión y contracción de la caja torácica durante las fases de inspiración y espiración. Estas variaciones presentan una frecuencia baja y un comportamiento periódico, lo que permite su detección mediante sensores externos no invasivos que respondan a cambios mecánicos inducidos por la respiración.
 
 Para el desarrollo de esta práctica se seleccionó un sensor de fuerza resistivo (FSR-40), el cual modifica su resistencia eléctrica en función de la presión aplicada sobre su superficie. Este tipo de sensor resulta adecuado para la detección indirecta del patrón respiratorio, ya que permite convertir las variaciones mecánicas producidas por la expansión torácica en una señal eléctrica proporcional, susceptible de ser acondicionada y digitalizada.
@@ -30,3 +31,22 @@ El FSR-40 presenta ventajas relevantes para su aplicación en un entorno de labo
 No obstante, es importante señalar que el FSR-40 responde a presión y no directamente a desplazamiento, lo que implica que las variaciones asociadas a la respiración pueden presentar amplitudes reducidas. Por esta razón, fue necesario aplicar una precarga mecánica mediante una banda elástica y un material flexible, con el fin de aumentar la sensibilidad del sensor a los cambios producidos durante el ciclo respiratorio.
 
 En conjunto, el sensor FSR-40 permitió la adquisición del patrón respiratorio de manera no invasiva, constituyéndose en una alternativa adecuada para cumplir los objetivos planteados en la guía de laboratorio
+
+# Montaje del sensor 
+
+El sensor FSR-40, se conectó a la entrada analógica de una ESP32 mediante una configuración de divisor de voltaje alimentada a 3.3 V. En este montaje, el sensor se dispone en serie con una resistencia fija conectada a tierra, generando en el nodo intermedio una señal de voltaje proporcional a las variaciones de resistencia inducidas por el estímulo físico aplicado (fuerza o presión). Dicho voltaje es adquirido directamente por el ADC de la ESP32, permitiendo la conversión de la magnitud física en una señal digital sin necesidad de etapas adicionales de acondicionamiento.
+
+
+Una vez establecido el diseño del sistema para la adquisición y digitalización de la señal respiratoria, se llevó a cabo su implementación física con el propósito de realizar la recolección de información. A continuación, se presenta el montaje desarrollado del sistema:
+
+
+
+
+
+# Digitalización, Adquisición y visualización de la señal
+
+
+
+
+
+
