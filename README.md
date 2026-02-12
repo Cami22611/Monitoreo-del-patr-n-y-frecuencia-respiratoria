@@ -44,9 +44,7 @@ Una vez establecido el diseño del sistema para la adquisición y digitalizació
 
 <img width="423" height="358" alt="image" src="https://github.com/user-attachments/assets/356df3e4-407a-4b83-9ad9-204a1cfff8b3" />
 
-
-
-# Digitalización, Adquisición y visualización de la señal
+# Digitalización de la señal
 
 la señal se digitalizo mediante el ADC integrado que posee la esp32, este se definio bajo los parametros expuestos a continuación 
 
@@ -94,7 +92,7 @@ Esta primera imagen corresponde al sujeto en estado de reposo, para este caso se
 
 Para el segundo caso expuesto en la guía, se indicó al sujeto que leyera en voz alta un texto durante 1 minuto y se realizo el mismo proceso de conteo manual, para este caso fueron 19 rpm.
 
-
+# Segunda Parte: frecuencia respiratoria mediante el espectro de frecuencias
 
 ## visualización y guardado
 
