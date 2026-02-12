@@ -1,5 +1,19 @@
 # LABORATORIO 1 : Monitoreo del patrón y frecuencia respiratoria
 
+# INTRODUCCIÓN
+
+
+
+# REQUERIMIENTOS
+
+ -Matlab
+
+-ESP32
+
+-Arduino IDE
+
+# FUNDAMENTOS TEÓRICOS
+
 Desde el punto de vista fisiológico, la ventilación pulmonar se basa en el movimiento del aire hacia el interior y el exterior de los pulmones como consecuencia de gradientes de presión entre la atmósfera, los alvéolos y el espacio intrapleural. Durante la inspiración, la expansión de la caja torácica genera una presión intrapleural negativa que favorece la entrada de aire, mientras que en la espiración el retroceso elástico pulmonar incrementa la presión alveolar, permitiendo la salida del aire hacia el exterior.
 
 El proceso respiratorio puede describirse mediante diversas variables físicas medibles, entre las que se destacan la presión, el volumen y el flujo respiratorio. Estas variables permiten caracterizar la ventilación pulmonar y el comportamiento del aire durante las fases de inspiración y espiración. Adicionalmente, variables temporales como la frecuencia respiratoria y la duración de cada fase del ciclo respiratorio permiten describir la dinámica del proceso en el tiempo y evaluar la respuesta del sistema respiratorio ante diferentes demandas fisiológicas.
