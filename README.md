@@ -318,5 +318,12 @@ Durante el habla, el patrón se vuelve menos uniforme y presenta mayor variabili
   
 El uso de múltiples sensores para el monitoreo del proceso respiratorio presenta varias ventajas, entre ellas una mayor precisión y confiabilidad de las mediciones al permitir la validación cruzada de la información obtenida, así como una mejor caracterización del patrón respiratorio al integrar señales como el movimiento torácico, abdominal o el flujo de aire, lo que resulta especialmente útil en aplicaciones clínicas y de investigación. No obstante, esta estrategia también implica desventajas, como el aumento en el costo del sistema, una mayor complejidad en el procesamiento de señales, mayor susceptibilidad a artefactos por movimiento y una posible incomodidad para el paciente debido al incremento de dispositivos. Por estas razones, el empleo de múltiples sensores suele justificarse en contextos donde se requiere un análisis respiratorio detallado, mientras que para aplicaciones básicas un solo sensor adecuadamente seleccionado y filtrado puede ser suficiente.
 
+# Conclusiones 
+
+El análisis de la señal respiratoria en las condiciones de reposo y habla permitió identificar diferencias claras en el comportamiento del patrón respiratorio, tanto en el dominio del tiempo como en el dominio de la frecuencia. En estado de reposo, la señal presentó un comportamiento periódico, estable y con baja variabilidad, con una frecuencia aproximada de 12 respiraciones por minuto, valor que se encuentra dentro del rango fisiológico normal para un adulto en reposo.
+En la condición de habla, la señal mostró mayor variabilidad y menor regularidad en comparación con el reposo. El análisis espectral indicó una frecuencia respiratoria aproximada entre 7 y 10 respiraciones por minuto, valor ligeramente inferior al esperado. Esta disminución podría deberse no solo a la modulación respiratoria propia de la fonación, sino también a posibles errores asociados al sensor de presión, como sensibilidad limitada, desplazamiento de línea base o presencia de artefactos durante los movimientos al hablar.
+La aplicación del filtro pasa-bajas fue fundamental para mejorar la calidad de la señal en ambas condiciones, ya que permitió eliminar componentes de alta frecuencia sin afectar la dinámica respiratoria principal. En general, los resultados evidencian la influencia de la actividad funcional sobre el patrón respiratorio y resaltan la importancia del adecuado acondicionamiento y validación del sistema de adquisición para obtener mediciones confiables.
+
+# Referencias
 
 
