@@ -12,6 +12,8 @@ En la presente práctica se analizó una señal respiratoria adquirida mediante 
 
 -Arduino IDE
 
+-Sensor FRS-40
+
 # FUNDAMENTOS TEÓRICOS
 
 Desde el punto de vista fisiológico, la ventilación pulmonar se basa en el movimiento del aire hacia el interior y el exterior de los pulmones como consecuencia de gradientes de presión entre la atmósfera, los alvéolos y el espacio intrapleural. Durante la inspiración, la expansión de la caja torácica genera una presión intrapleural negativa que favorece la entrada de aire, mientras que en la espiración el retroceso elástico pulmonar incrementa la presión alveolar, permitiendo la salida del aire hacia el exterior.
@@ -327,6 +329,6 @@ En la condición de habla, la señal mostró mayor variabilidad y menor regulari
 
 La aplicación del filtro pasa-bajas fue fundamental para mejorar la calidad de la señal en ambas condiciones, ya que permitió eliminar componentes de alta frecuencia sin afectar la dinámica respiratoria principal. En general, los resultados evidencian la influencia de la actividad funcional sobre el patrón respiratorio y resaltan la importancia del adecuado acondicionamiento y validación del sistema de adquisición para obtener mediciones confiables.
 
-# Referencias
+
 
 
