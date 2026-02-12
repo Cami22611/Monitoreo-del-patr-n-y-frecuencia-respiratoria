@@ -133,10 +133,10 @@ end
 fechaHora = datestr(now,'yyyy_mm_dd_HH_MM_SS');
 nombreArchivo = ['senal_respiratoria_' fechaHora '.mat'];
 
-senal = data;        %#ok<NASGU>
-tiempo = time;       %#ok<NASGU>
-duracion = T;        %#ok<NASGU>
-fs_aprox = 1/mean(diff(time)); %#ok<NASGU>
+senal = data;     
+tiempo = time;       
+duracion = T;       
+fs_aprox = 1/mean(diff(time)); 
 
 save(nombreArchivo, 'senal', 'tiempo', 'duracion', 'fs_aprox');
 
@@ -149,6 +149,8 @@ end
 clear s
 disp("Visualización finalizada y puerto cerrado correctamente")
 ```
+Este script implementa un sistema de adquisición y visualización en tiempo real de la señal recibida por puerto serial. El programa establece la comunicación con el dispositivo, captura de manera continua las muestras provenientes del ADC, las normaliza y las representa gráficamente en función del tiempo durante un periodo definido por el usuario. Al finalizar el proceso, los datos obtenidos, junto con el eje temporal, la duración del registro y una estimación de la frecuencia de muestreo, se almacenan automáticamente en un archivo .mat, lo que facilita su análisis.
+
 
 
 
