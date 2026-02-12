@@ -48,13 +48,13 @@ Una vez establecido el diseño del sistema para la adquisición y digitalizació
 la señal se digitalizo mediante el ADC integrado que posee la esp32, este se definio bajo los parametros expuestos a continuación 
 
 ```bash
-const int fsrPin = 34; # pin del ADC
+const int fsrPin = 34; 
 
 void setup() {
-  Serial.begin(115200); # inicio de comunicación serial 
+  Serial.begin(115200); 
   delay(1000);
 
-  analogReadResolution(12);        # resolución del ADC
+  analogReadResolution(12);        
   analogSetAttenuation(ADC_11db);  
 }
 
@@ -75,7 +75,80 @@ void loop() {
 ```
 El código lee de forma continua la señal del sensor, promedia varias muestras consecutivas (10 muestras) para reducir el ruido y envía el valor resultante por comunicación serial. La configuración del ADC permite medir correctamente el rango de voltaje del sensor, y el proceso se repite cada 10 ms, estableciendo una frecuencia de muestreo aproximada de 100 Hz, adecuada para el análisis temporal de la señal respiratoria.
 
+## visualización y guardado
 
+Luego de enviar los datos por comunicación serial, estos son recibidos en una interfaz de matlab para ser procesada
+
+```bash
+clc
+clear
+close all
+
+puerto   = "COM3";
+baudrate = 115200;
+
+T = input('Ingrese el tiempo que desea visualizar (s): ');
+
+s = serialport(puerto, baudrate);
+configureTerminator(s,"LF");
+flush(s);
+
+disp("Recepción de datos en tiempo real...")
+
+data = [];
+time = [];
+fig = figure;
+h = plot(nan, nan, 'b', 'LineWidth', 1.5);
+xlabel('Tiempo [s]')
+ylabel('Señal respiratoria (ADC normalizado)')
+title('Señal respiratoria en tiempo real')
+grid on
+
+xlim([0 T])
+ylim([0 1])
+
+refreshRate = 0.05;
+lastUpdate = tic;
+tStart = tic;
+
+while isvalid(fig) && toc(tStart) < T
+
+    if s.NumBytesAvailable > 0
+        valor = str2double(readline(s));
+
+        if ~isnan(valor)
+            data(end+1) = valor / 4095;   
+            time(end+1) = toc(tStart);
+        end
+    end
+
+    if toc(lastUpdate) > refreshRate
+        h.XData = time;
+        h.YData = data;
+        drawnow limitrate
+        lastUpdate = tic;
+    end
+end
+
+fechaHora = datestr(now,'yyyy_mm_dd_HH_MM_SS');
+nombreArchivo = ['senal_respiratoria_' fechaHora '.mat'];
+
+senal = data;        %#ok<NASGU>
+tiempo = time;       %#ok<NASGU>
+duracion = T;        %#ok<NASGU>
+fs_aprox = 1/mean(diff(time)); %#ok<NASGU>
+
+save(nombreArchivo, 'senal', 'tiempo', 'duracion', 'fs_aprox');
+
+disp(['Datos guardados en el archivo: ' nombreArchivo])
+
+if isvalid(fig)
+    close(fig)
+end
+
+clear s
+disp("Visualización finalizada y puerto cerrado correctamente")
+```
 
 
 
