@@ -151,6 +151,13 @@ disp("Visualización finalizada y puerto cerrado correctamente")
 ```
 Este script implementa un sistema de adquisición y visualización en tiempo real de la señal recibida por puerto serial. El programa establece la comunicación con el dispositivo, captura de manera continua las muestras provenientes del ADC, las normaliza y las representa gráficamente en función del tiempo durante un periodo definido por el usuario. Al finalizar el proceso, los datos obtenidos, junto con el eje temporal, la duración del registro y una estimación de la frecuencia de muestreo, se almacenan automáticamente en un archivo .mat, lo que facilita su análisis.
 
+# Primera parte: conteo manual de la frecuencia respiratoria 
+
+Como parte inicial, la guía nos indica que se debe realizar la visualización de la señal dentro de un prompt, para este caso el de arduino, y seguido a esto montar de forma manual el número de respiraciones del sujeto en reposo y durante el proceso de habla.
+
+A continuación se muestra una imagen en donde se observa la interfaz del prompt y como se ve la señal dentro de este medio:
+
+<img width="980" height="613" alt="image" src="https://github.com/user-attachments/assets/747aeab9-58f1-46e4-9a20-2fec7cc047c3" />
 
 
 
