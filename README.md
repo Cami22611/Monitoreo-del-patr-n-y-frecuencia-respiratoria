@@ -170,6 +170,13 @@ disp("Visualización finalizada y puerto cerrado correctamente")
 ```
 Este script implementa un sistema de adquisición y visualización en tiempo real de la señal recibida por puerto serial. El programa establece la comunicación con el dispositivo, captura de manera continua las muestras provenientes del ADC, las normaliza y las representa gráficamente en función del tiempo durante un periodo definido por el usuario. Al finalizar el proceso, los datos obtenidos, junto con el eje temporal, la duración del registro y una estimación de la frecuencia de muestreo, se almacenan automáticamente en un archivo .mat, lo que facilita su análisis.
 
+## Adecución de la señal
+
+Una vez almacenada la señal, el archivo .mat será empleado en un script posterior, donde se aplicarán técnicas de filtrado con el fin de mejorar la claridad de la señal. Posteriormente, se obtendrá su espectro en frecuencia, a partir del cual se estimará la frecuencia respiratoria identificando el componente dominante del espectro.
+
+### Caso 1: sujeto en reposo
+
+
 
 
 
