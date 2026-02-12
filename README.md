@@ -300,13 +300,23 @@ Después del filtrado, la señal en el dominio del tiempo se observa más suave 
 <img width="690" height="523" alt="image" src="https://github.com/user-attachments/assets/6eca1f4d-981c-4582-bd80-834f78660934" />
 
 ### Espectro de magnitud
-En cuanto a la representación en el dominio de la frecuencia, el espectro de magnitud muestra cómo la energía de la señal se distribuye según la frecuencia. En la condición de habla se observa un pico dominante dentro del rango respiratorio fisiológico, lo cual corresponde a la frecuencia respiratoria principal. Sin embargo, en comparación con el reposo, el espectro puede presentar una distribución ligeramente más amplia o componentes adicionales de menor magnitud, debido a la modulación respiratoria causada por el habla. La frecuencia dominante identificada en el espectro permite calcular las respiraciones por minuto, proporcionando una medida cuantitativa del ritmo respiratorio durante la actividad de hablar.
+En cuanto a la representación en el dominio de la frecuencia, el espectro de magnitud muestra cómo la energía de la señal se distribuye según la frecuencia. En la condición de habla se observa un pico dominante dentro del rango respiratorio fisiológico, lo cual corresponde a la frecuencia respiratoria principal. Sin embargo, en comparación con el reposo, el espectro puede presentar una distribución ligeramente más amplia o componentes adicionales de menor magnitud, debido a la modulación respiratoria causada por el habla. La frecuencia dominante identificada en el espectro permite calcular las respiraciones por minuto, proporcionando una medida cuantitativa del ritmo respiratorio durante la actividad de hablar,para este caso FR= 10.
 
 <img width="690" height="523" alt="image" src="https://github.com/user-attachments/assets/944ec5cc-0005-44e5-8032-894acd5c84c0" />
 
 
 En general, el filtrado aplicado permitió aislar adecuadamente la componente respiratoria principal, mientras que el análisis espectral permitió identificar de manera clara la frecuencia dominante asociada al patrón respiratorio en esta condición.
 
+# Respuesta a las preguntas planteadas en la guía 
+
+- ### ¿Son los patrones respiratorios y frecuencias respiratorias iguales o diferentes en cada caso? ¿A qué se debe esto?
+
+Los patrones respiratorios son diferentes entre ambas condiciones.En reposo, el patrón es más regular, periódico y estable, con una frecuencia respiratoria constante y menor variabilidad. Esto se debe a que el control respiratorio está principalmente regulado por mecanismos automáticos del sistema nervioso autónomo, sin interferencias externas.
+Durante el habla, el patrón se vuelve menos uniforme y presenta mayor variabilidad. Aunque la frecuencia dominante puede mantenerse dentro del rango fisiológico, la respiración se adapta a las necesidades de la fonación, generando modificaciones en la duración de las fases respiratorias y en la amplitud de la señal. El habla requiere control voluntario del flujo de aire, lo que introduce irregularidades y componentes adicionales en la señal.Por lo tanto, las diferencias se deben a la interacción entre el control automático de la respiración y el control voluntario asociado a la producción del lenguaje.
+
+- ### ¿Cuáles serían las ventajas y desventajas de emplear múltiples sensores para el monitoreo del proceso respiratorio? ¿Cuáles podrían ser las razones?
+  
+El uso de múltiples sensores para el monitoreo del proceso respiratorio presenta varias ventajas, entre ellas una mayor precisión y confiabilidad de las mediciones al permitir la validación cruzada de la información obtenida, así como una mejor caracterización del patrón respiratorio al integrar señales como el movimiento torácico, abdominal o el flujo de aire, lo que resulta especialmente útil en aplicaciones clínicas y de investigación. No obstante, esta estrategia también implica desventajas, como el aumento en el costo del sistema, una mayor complejidad en el procesamiento de señales, mayor susceptibilidad a artefactos por movimiento y una posible incomodidad para el paciente debido al incremento de dispositivos. Por estas razones, el empleo de múltiples sensores suele justificarse en contextos donde se requiere un análisis respiratorio detallado, mientras que para aplicaciones básicas un solo sensor adecuadamente seleccionado y filtrado puede ser suficiente.
 
 
 
