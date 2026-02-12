@@ -299,7 +299,7 @@ Después del filtrado, la señal en el dominio del tiempo se observa más suave 
 
 ### Espectro de magnitud
 En cuanto a la representación en el dominio de la frecuencia, el espectro de magnitud muestra cómo la energía de la señal se distribuye según la frecuencia. En la condición de habla se observa un pico dominante dentro del rango respiratorio fisiológico, lo cual corresponde a la frecuencia respiratoria principal. Sin embargo, en comparación con el reposo, el espectro puede presentar una distribución ligeramente más amplia o componentes adicionales de menor magnitud, debido a la modulación respiratoria causada por el habla. La frecuencia dominante identificada en el espectro permite calcular las respiraciones por minuto, proporcionando una medida cuantitativa del ritmo respiratorio durante la actividad de hablar.
-<img width="692" height="527" alt="image" src="https://github.com/user-attachments/assets/944ec5cc-0005-44e5-8032-894acd5c84c0" />
+<img width="697" height="521" alt="image" src="https://github.com/user-attachments/assets/944ec5cc-0005-44e5-8032-894acd5c84c0" />
 
 
 En general, el filtrado aplicado permitió aislar adecuadamente la componente respiratoria principal, mientras que el análisis espectral permitió identificar de manera clara la frecuencia dominante asociada al patrón respiratorio en esta condición.
