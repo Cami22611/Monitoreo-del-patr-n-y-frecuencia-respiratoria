@@ -286,6 +286,7 @@ Después de aplicar el filtro pasa-bajas, la señal se vuelve mucho más suave y
 ### Espectro de magnitud 
 
 En la representación en frecuencia, el espectro muestra un pico dominante bien definido alrededor de 0.2 Hz. Esto indica que la mayor parte de la energía de la señal está concentrada en una única frecuencia fundamental, correspondiente al ritmo respiratorio. La ausencia de múltiples picos significativos en otras frecuencias confirma que la respiración es estable y que no existen componentes adicionales relevantes. Al convertir esta frecuencia dominante a respiraciones por minuto, se obtiene un valor aproximado de 12 respiraciones por minuto, lo cual se encuentra dentro del rango normal en reposo para un adulto.
+
 <img width="690" height="523" alt="image" src="https://github.com/user-attachments/assets/7a0879ea-b5ea-41cf-bbcb-3ed74ee60127" />
 
 En términos generales, tanto el análisis temporal como el espectral evidencian un patrón respiratorio regular, controlado y fisiológicamente normal. La señal presenta baja variabilidad y una distribución de energía concentrada en una frecuencia principal, lo que es coherente con un estado de reposo y estabilidad autonómica.
@@ -295,10 +296,12 @@ En términos generales, tanto el análisis temporal como el espectral evidencian
 En la señal respiratoria registrada durante el habla se observa inicialmente una mayor variabilidad en comparación con la condición de reposo. Esto se debe a que al hablar intervienen movimientos adicionales del sistema respiratorio, generando componentes de mayor frecuencia y pequeñas perturbaciones superpuestas a la señal principal. Por esta razón fue necesario aplicar un filtrado pasa-bajas con frecuencia de corte de 1 Hz, considerando que la frecuencia respiratoria fisiológica se encuentra aproximadamente entre 0.1 y 0.6 Hz. Este filtro permite conservar la componente asociada al ciclo respiratorio y eliminar componentes de mayor frecuencia relacionadas con ruido, vibraciones o artefactos producidos por la fonación.
 
 Después del filtrado, la señal en el dominio del tiempo se observa más suave y con una forma más periódica, lo que facilita la identificación de los ciclos de inspiración y espiración. Se reduce notablemente la presencia de oscilaciones rápidas que no corresponden al patrón respiratorio principal, mejorando así la calidad de la señal para su análisis.
+
 <img width="690" height="523" alt="image" src="https://github.com/user-attachments/assets/6eca1f4d-981c-4582-bd80-834f78660934" />
 
 ### Espectro de magnitud
 En cuanto a la representación en el dominio de la frecuencia, el espectro de magnitud muestra cómo la energía de la señal se distribuye según la frecuencia. En la condición de habla se observa un pico dominante dentro del rango respiratorio fisiológico, lo cual corresponde a la frecuencia respiratoria principal. Sin embargo, en comparación con el reposo, el espectro puede presentar una distribución ligeramente más amplia o componentes adicionales de menor magnitud, debido a la modulación respiratoria causada por el habla. La frecuencia dominante identificada en el espectro permite calcular las respiraciones por minuto, proporcionando una medida cuantitativa del ritmo respiratorio durante la actividad de hablar.
+
 <img width="690" height="523" alt="image" src="https://github.com/user-attachments/assets/944ec5cc-0005-44e5-8032-894acd5c84c0" />
 
 
