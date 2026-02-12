@@ -46,9 +46,6 @@ Una vez establecido el diseño del sistema para la adquisición y digitalizació
 
 
 
-
-
-
 # Digitalización, Adquisición y visualización de la señal
 
 la señal se digitalizo mediante el ADC integrado que posee la esp32, este se definio bajo los parametros expuestos a continuación 
@@ -80,6 +77,24 @@ void loop() {
 
 ```
 El código lee de forma continua la señal del sensor, promedia varias muestras consecutivas (10 muestras) para reducir el ruido y envía el valor resultante por comunicación serial. La configuración del ADC permite medir correctamente el rango de voltaje del sensor, y el proceso se repite cada 10 ms, estableciendo una frecuencia de muestreo aproximada de 100 Hz, adecuada para el análisis temporal de la señal respiratoria.
+
+# Primera parte: conteo manual de la frecuencia respiratoria 
+
+Como parte inicial, la guía nos indica que se debe realizar la visualización de la señal dentro de un prompt, para este caso el de arduino, y seguido a esto montar de forma manual el número de respiraciones del sujeto en reposo y durante el proceso de habla.
+
+A continuación se muestra una imagen en donde se observa la interfaz del prompt y como se ve la señal dentro de este medio:
+
+
+<img width="980" height="613" alt="image" src="https://github.com/user-attachments/assets/747aeab9-58f1-46e4-9a20-2fec7cc047c3" />
+
+Esta primera imagen corresponde al sujeto en estado de reposo, para este caso se presento una frecuencia respiratoria de 13 rpm.
+
+<img width="979" height="621" alt="image" src="https://github.com/user-attachments/assets/a120b687-09e9-40f7-a2f4-4e9c7c87e299" />
+
+
+Para el segundo caso expuesto en la guía, se indicó al sujeto que leyera en voz alta un texto durante 1 minuto y se realizo el mismo proceso de conteo manual, para este caso fueron 19 rpm.
+
+
 
 ## visualización y guardado
 
@@ -156,17 +171,6 @@ clear s
 disp("Visualización finalizada y puerto cerrado correctamente")
 ```
 Este script implementa un sistema de adquisición y visualización en tiempo real de la señal recibida por puerto serial. El programa establece la comunicación con el dispositivo, captura de manera continua las muestras provenientes del ADC, las normaliza y las representa gráficamente en función del tiempo durante un periodo definido por el usuario. Al finalizar el proceso, los datos obtenidos, junto con el eje temporal, la duración del registro y una estimación de la frecuencia de muestreo, se almacenan automáticamente en un archivo .mat, lo que facilita su análisis.
-
-# Primera parte: conteo manual de la frecuencia respiratoria 
-
-Como parte inicial, la guía nos indica que se debe realizar la visualización de la señal dentro de un prompt, para este caso el de arduino, y seguido a esto montar de forma manual el número de respiraciones del sujeto en reposo y durante el proceso de habla.
-
-A continuación se muestra una imagen en donde se observa la interfaz del prompt y como se ve la señal dentro de este medio:
-
-
-<img width="980" height="613" alt="image" src="https://github.com/user-attachments/assets/747aeab9-58f1-46e4-9a20-2fec7cc047c3" />
-
-Esta primera imagen corresponde al sujeto en estado de reposo, para este caso se presento una frecuencia respiratoria de 13 rpm.
 
 
 
