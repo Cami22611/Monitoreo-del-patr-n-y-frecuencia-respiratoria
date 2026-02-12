@@ -157,7 +157,10 @@ Como parte inicial, la guía nos indica que se debe realizar la visualización d
 
 A continuación se muestra una imagen en donde se observa la interfaz del prompt y como se ve la señal dentro de este medio:
 
+
 <img width="980" height="613" alt="image" src="https://github.com/user-attachments/assets/747aeab9-58f1-46e4-9a20-2fec7cc047c3" />
+
+Esta primera imagen corresponde al sujeto en estado de reposo, para este caso se presento una frecuencia respiratoria de 13 rpm.
 
 
 
