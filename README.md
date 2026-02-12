@@ -1,7 +1,8 @@
 # LABORATORIO 1 : Monitoreo del patrón y frecuencia respiratoria
 
 # INTRODUCCIÓN
-En esta práctica se realizó el análisis de la señal respiratoria mediante la adquisición de datos con un sensor y su posterior procesamiento digital. El procedimiento incluyó la visualización en tiempo real, el filtrado de la señal y el análisis en el dominio de la frecuencia, permitiendo estimar la frecuencia respiratoria y evaluar su comportamiento de forma cuantitativa.
+
+En la presente práctica se analizó una señal respiratoria adquirida mediante un sensor de presión, utilizando MATLAB como herramienta para el procesamiento digital y análisis de señales biomédicas. La señal registrada fue sometida a técnicas de filtrado pasa-bajas con el fin de reducir el ruido y los artefactos asociados al sistema de adquisición y al movimiento del sujeto, permitiendo una mejor identificación de los ciclos de inspiración y espiración. El estudio se realizó en dos condiciones fisiológicas distintas, reposo y habla, con el propósito de comparar los patrones respiratorios y la frecuencia respiratoria en cada caso, así como evaluar la influencia de la actividad funcional y del desempeño del sensor en la calidad de la señal obtenida.
 
 # REQUERIMIENTOS
 
