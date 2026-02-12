@@ -6,13 +6,13 @@ En la presente práctica se analizó una señal respiratoria adquirida mediante 
 
 # REQUERIMIENTOS
 
- -Matlab
+ - Matlab
 
--ESP32
+- ESP32
 
--Arduino IDE
+- Arduino IDE
 
--Sensor FRS-40
+- Sensor FRS-40
 
 # FUNDAMENTOS TEÓRICOS
 
