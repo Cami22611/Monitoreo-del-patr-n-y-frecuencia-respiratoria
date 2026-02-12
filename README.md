@@ -1,8 +1,7 @@
 # LABORATORIO 1 : Monitoreo del patrón y frecuencia respiratoria
 
 # INTRODUCCIÓN
-
-
+En esta práctica se realizó el análisis de la señal respiratoria mediante la adquisición de datos con un sensor y su posterior procesamiento digital. El procedimiento incluyó la visualización en tiempo real, el filtrado de la señal y el análisis en el dominio de la frecuencia, permitiendo estimar la frecuencia respiratoria y evaluar su comportamiento de forma cuantitativa.
 
 # REQUERIMIENTOS
 
