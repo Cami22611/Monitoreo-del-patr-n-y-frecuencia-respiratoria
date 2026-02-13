@@ -279,7 +279,9 @@ fdom2 = fb2(i2)
 rpm2 = fdom2*60
 ```
 ## Caso 1: sujeto en reposo
+
 ### Señal original vs señal filtrada
+
 En la gráfica de la señal respiratoria en reposo en el dominio del tiempo, se observa un comportamiento claramente periódico, asociado a los ciclos normales de inspiración y espiración. La señal original presenta pequeñas oscilaciones rápidas superpuestas a la forma principal, las cuales corresponden a ruido y a componentes de mayor frecuencia introducidas por el sistema de adquisición o por pequeñas variaciones involuntarias del movimiento. A pesar de estas fluctuaciones, el patrón general es repetitivo y relativamente uniforme a lo largo de los 30 segundos analizados, lo que indica que la respiración del sujeto se mantiene estable y sin alteraciones evidentes en el periodo entre ciclos. La amplitud no muestra cambios abruptos, lo que es consistente con un estado fisiológico de reposo.
 
 Después de aplicar un filtro pasa-bajas ideal de tipo FIR, la señal se suaviza considerablemente. Este tipo de filtro atenúa las componentes de alta frecuencia y conserva las bajas frecuencias asociadas a la dinámica respiratoria, permitiendo resaltar únicamente la variación lenta correspondiente al proceso de ventilación. En la señal filtrada se distinguen con mayor claridad los ciclos completos de respiración, con una forma de onda más definida y continua. La periodicidad se mantiene prácticamente constante y las variaciones de amplitud entre ciclos son leves, características de una respiración tranquila y regular. En conjunto, el filtrado mejora la calidad de la señal y facilita su interpretación, sin modificar el comportamiento fisiológico principal del proceso respiratorio.
@@ -300,7 +302,9 @@ Por encima de 1 Hz, la magnitud es prácticamente nula, lo que indica que no exi
 Para este caso la frecuencia dominante es de 0,2399 Hz y 14,39 rpm.
 
 ## Caso 2: sujeto hablando
+
 ### Señal original vs señal filtrada
+
 En la gráfica de la señal respiratoria hablando en el dominio del tiempo se observa un comportamiento menos periódico y más irregular en comparación con la respiración en reposo. La señal original presenta variaciones abruptas en la amplitud y cambios en la forma de onda, debido a la influencia de la fonación y los movimientos asociados al habla. Durante el habla, la respiración no sigue un patrón estrictamente sinusoidal, ya que las inspiraciones suelen ser más rápidas y las espiraciones más prolongadas y moduladas para permitir la producción de sonido. Esto se refleja en la presencia de picos más marcados y segmentos con mayor variabilidad.
 
 Después de aplicar el filtro pasa-bajas ideal de tipo FIR, la señal se suaviza considerablemente, eliminando gran parte de las componentes de alta frecuencia asociadas al ruido y a las vibraciones propias del habla. Sin embargo, a diferencia de la señal en reposo, la forma de onda filtrada sigue mostrando irregularidades en el periodo y en la amplitud de los ciclos, lo que es fisiológicamente normal cuando una persona está hablando. Se observan cambios en la duración de los ciclos respiratorios y en la profundidad de las respiraciones, evidenciando un patrón respiratorio más dinámico y adaptativo.
@@ -311,6 +315,7 @@ En conjunto, el filtrado permite resaltar la envolvente respiratoria principal s
 
 
 ### Espectro de magnitud
+
 En el espectro de magnitud de la señal respiratoria hablando se observa que la energía ya no está concentrada en un único pico dominante tan definido como en el estado de reposo, sino que se distribuye en varias componentes dentro del rango de bajas frecuencias. Se identifican picos principales aproximadamente entre 0.1 y 0.2 Hz, lo que indica que la frecuencia respiratoria fundamental sigue estando en el rango fisiológico esperado; sin embargo, la presencia de múltiples picos cercanos refleja una mayor variabilidad en el patrón respiratorio.
 
 Además, se observan componentes adicionales de menor magnitud en frecuencias superiores, aproximadamente entre 0.3 y 1 Hz. Estas componentes pueden asociarse a las modulaciones generadas por el habla, ya que durante la fonación la espiración se controla activamente y se producen cambios en el flujo de aire que introducen variaciones adicionales en la señal. Esto explica que el espectro sea más ancho y menos concentrado que en la condición de reposo.
@@ -341,9 +346,10 @@ En la condición de habla, la señal mostró mayor variabilidad y menor regulari
 
 La aplicación del filtro pasa-bajas fue fundamental para mejorar la calidad de la señal en ambas condiciones, ya que permitió eliminar componentes de alta frecuencia sin afectar la dinámica respiratoria principal. En general, los resultados evidencian la influencia de la actividad funcional sobre el patrón respiratorio y resaltan la importancia del adecuado acondicionamiento y validación del sistema de adquisición para obtener mediciones confiables.
 
-# Uso
+# Integrantes del informe
 
 Isabel Sofía Maldonado Roa y María Camila Martínez Ramírez
 
 
 
+ 1
