@@ -349,7 +349,3 @@ La aplicación del filtro pasa-bajas fue fundamental para mejorar la calidad de 
 # Integrantes del informe
 
 Isabel Sofía Maldonado Roa y María Camila Martínez Ramírez
-
-
-
- 1
