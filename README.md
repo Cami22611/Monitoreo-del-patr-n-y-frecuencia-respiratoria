@@ -297,6 +297,7 @@ Por encima de 1 Hz, la magnitud es prácticamente nula, lo que indica que no exi
 
 <img width="686" height="522" alt="image" src="https://github.com/user-attachments/assets/303269a1-7ac4-428b-abb6-b17c685d95fd" />
 
+Para este caso la frecuencia dominante es de 0,2399 Hz y 14,39 rpm.
 
 ## Caso 2: sujeto hablando
 ### Señal original vs señal filtrada
@@ -319,6 +320,8 @@ Por encima de 1 Hz, la magnitud es prácticamente nula, lo que confirma que el f
 
 <img width="696" height="520" alt="image" src="https://github.com/user-attachments/assets/68960938-a8df-48fb-ae45-4fba58809f13" />
 
+Para este caso la frecuencia dominante es de 0,1028 Hz y 6,16 rpm.
+
 # Respuesta a las preguntas planteadas en la guía 
 
 - ### ¿Son los patrones respiratorios y frecuencias respiratorias iguales o diferentes en cada caso? ¿A qué se debe esto?
@@ -338,6 +341,9 @@ En la condición de habla, la señal mostró mayor variabilidad y menor regulari
 
 La aplicación del filtro pasa-bajas fue fundamental para mejorar la calidad de la señal en ambas condiciones, ya que permitió eliminar componentes de alta frecuencia sin afectar la dinámica respiratoria principal. En general, los resultados evidencian la influencia de la actividad funcional sobre el patrón respiratorio y resaltan la importancia del adecuado acondicionamiento y validación del sistema de adquisición para obtener mediciones confiables.
 
+# Uso
+
+Isabel Sofía Maldonado Roa y María Camila Martínez Ramírez
 
 
 
