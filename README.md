@@ -280,19 +280,23 @@ rpm2 = fdom2*60
 ```
 ## Caso 1: sujeto en reposo
 ### Señal original vs señal filtrada
-En la gráfica de la señal respiratoria en reposo en el dominio del tiempo, se observa un comportamiento claramente periódico, correspondiente a los ciclos normales de inspiración y espiración. La señal original presenta pequeñas fluctuaciones rápidas superpuestas a la forma principal, las cuales corresponden a ruido o interferencias del sistema de adquisición. Sin embargo, a pesar de estas variaciones, se distingue un patrón repetitivo bastante uniforme, lo que indica que la respiración del sujeto es regular y estable. No se evidencian cambios bruscos en amplitud ni en el periodo entre ciclos, lo que sugiere un estado fisiológico tranquilo.
+En la gráfica de la señal respiratoria en reposo en el dominio del tiempo, se observa un comportamiento claramente periódico, asociado a los ciclos normales de inspiración y espiración. La señal original presenta pequeñas oscilaciones rápidas superpuestas a la forma principal, las cuales corresponden a ruido y a componentes de mayor frecuencia introducidas por el sistema de adquisición o por pequeñas variaciones involuntarias del movimiento. A pesar de estas fluctuaciones, el patrón general es repetitivo y relativamente uniforme a lo largo de los 30 segundos analizados, lo que indica que la respiración del sujeto se mantiene estable y sin alteraciones evidentes en el periodo entre ciclos. La amplitud no muestra cambios abruptos, lo que es consistente con un estado fisiológico de reposo.
 
-Después de aplicar el filtro pasa-bajas, la señal se vuelve mucho más suave y limpia. Se eliminan las componentes de alta frecuencia y se resalta únicamente la dinámica respiratoria principal. En la señal filtrada se distinguen claramente los ciclos completos de respiración, con una forma de onda más definida y continua. La periodicidad se mantiene constante y la amplitud presenta variaciones leves entre ciclos, lo que es característico de una respiración en estado de reposo. Este resultado confirma que el filtrado fue adecuado para mejorar la calidad de la señal sin alterar su comportamiento fisiológico principal.
+Después de aplicar un filtro pasa-bajas ideal de tipo FIR, la señal se suaviza considerablemente. Este tipo de filtro atenúa las componentes de alta frecuencia y conserva las bajas frecuencias asociadas a la dinámica respiratoria, permitiendo resaltar únicamente la variación lenta correspondiente al proceso de ventilación. En la señal filtrada se distinguen con mayor claridad los ciclos completos de respiración, con una forma de onda más definida y continua. La periodicidad se mantiene prácticamente constante y las variaciones de amplitud entre ciclos son leves, características de una respiración tranquila y regular. En conjunto, el filtrado mejora la calidad de la señal y facilita su interpretación, sin modificar el comportamiento fisiológico principal del proceso respiratorio.
 
-<img width="690" height="523" alt="image" src="https://github.com/user-attachments/assets/a8d71e5d-0ea6-4d04-a25e-2d8e8d3f513d" />
+<img width="697" height="525" alt="image" src="https://github.com/user-attachments/assets/5fbe00b0-4ade-444c-a97d-9f327450dae3" />
 
 ### Espectro de magnitud 
 
-En la representación en frecuencia, el espectro muestra un pico dominante bien definido alrededor de 0.2 Hz. Esto indica que la mayor parte de la energía de la señal está concentrada en una única frecuencia fundamental, correspondiente al ritmo respiratorio. La ausencia de múltiples picos significativos en otras frecuencias confirma que la respiración es estable y que no existen componentes adicionales relevantes. Al convertir esta frecuencia dominante a respiraciones por minuto, se obtiene un valor aproximado de 12 respiraciones por minuto, lo cual se encuentra dentro del rango normal en reposo para un adulto.
+En el espectro de magnitud de la señal respiratoria en reposo se observa un pico dominante claramente definido alrededor de 0.2–0.25 Hz, lo que indica que la mayor parte de la energía de la señal se concentra en esa frecuencia. Esta componente corresponde a la frecuencia respiratoria principal del sujeto. Si se convierte a respiraciones por minuto (multiplicando por 60), se obtiene un valor aproximado entre 12 y 15 respiraciones por minuto, lo cual es coherente con un estado de reposo en un adulto sano.
 
-<img width="690" height="523" alt="image" src="https://github.com/user-attachments/assets/7a0879ea-b5ea-41cf-bbcb-3ed74ee60127" />
+Además del pico principal, se observan componentes de menor magnitud en frecuencias superiores (entre 0.3 y 0.8 Hz aproximadamente), las cuales pueden asociarse a armónicos de la señal respiratoria o a pequeñas contribuciones de ruido y variaciones fisiológicas secundarias. Sin embargo, estas componentes tienen una amplitud considerablemente menor en comparación con la frecuencia fundamental, lo que confirma que el comportamiento de la señal está dominado por un patrón periódico bien definido.
 
-En términos generales, tanto el análisis temporal como el espectral evidencian un patrón respiratorio regular, controlado y fisiológicamente normal. La señal presenta baja variabilidad y una distribución de energía concentrada en una frecuencia principal, lo que es coherente con un estado de reposo y estabilidad autonómica.
+Por encima de 1 Hz, la magnitud es prácticamente nula, lo que indica que no existen componentes significativas de alta frecuencia, especialmente después del proceso de filtrado pasa-bajas ideal FIR. En conjunto, el espectro confirma que la señal es predominantemente de baja frecuencia, característica típica de las señales respiratorias en reposo, y valida que el filtrado aplicado fue adecuado para preservar la información fisiológicamente relevante.
+
+
+<img width="686" height="522" alt="image" src="https://github.com/user-attachments/assets/303269a1-7ac4-428b-abb6-b17c685d95fd" />
+
 
 ## Caso 2: sujeto hablando
 ### Señal original vs señal filtrada
@@ -300,12 +304,14 @@ En la señal respiratoria registrada durante el habla se observa inicialmente un
 
 Después del filtrado, la señal en el dominio del tiempo se observa más suave y con una forma más periódica, lo que facilita la identificación de los ciclos de inspiración y espiración. Se reduce notablemente la presencia de oscilaciones rápidas que no corresponden al patrón respiratorio principal, mejorando así la calidad de la señal para su análisis.
 
-<img width="690" height="523" alt="image" src="https://github.com/user-attachments/assets/6eca1f4d-981c-4582-bd80-834f78660934" />
+<img width="691" height="517" alt="image" src="https://github.com/user-attachments/assets/1b1427b7-1275-4b61-8fe1-867d251171b9" />
+
 
 ### Espectro de magnitud
 En cuanto a la representación en el dominio de la frecuencia, el espectro de magnitud muestra cómo la energía de la señal se distribuye según la frecuencia. En la condición de habla se observa un pico dominante dentro del rango respiratorio fisiológico, lo cual corresponde a la frecuencia respiratoria principal. Sin embargo, en comparación con el reposo, el espectro puede presentar una distribución ligeramente más amplia o componentes adicionales de menor magnitud, debido a la modulación respiratoria causada por el habla. La frecuencia dominante identificada en el espectro permite calcular las respiraciones por minuto, proporcionando una medida cuantitativa del ritmo respiratorio durante la actividad de hablar,para este caso FR= esta entre 7-10 rpm.
 
-<img width="690" height="523" alt="image" src="https://github.com/user-attachments/assets/944ec5cc-0005-44e5-8032-894acd5c84c0" />
+<img width="696" height="520" alt="image" src="https://github.com/user-attachments/assets/68960938-a8df-48fb-ae45-4fba58809f13" />
+
 
 
 En general, el filtrado aplicado permitió aislar adecuadamente la componente respiratoria principal, mientras que el análisis espectral permitió identificar de manera clara la frecuencia dominante asociada al patrón respiratorio en esta condición.
